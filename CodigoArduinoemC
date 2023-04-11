@@ -1,0 +1,12 @@
+#define LIGHT_PIN 13 // Define o pino onde está conectada a luz
+
+void setup() {
+  pinMode(LIGHT_PIN, OUTPUT); // Define o pino como saída
+}
+
+void loop() {
+  digitalWrite(LIGHT_PIN, HIGH); // Ligue a luz (nível alto no pino)
+  delay(1000); // Aguarde 1 segundo
+  digitalWrite(LIGHT_PIN, LOW); // Desligue a luz (nível baixo no pino)
+  delay(1000); // Aguarde 1 segundo
+}
